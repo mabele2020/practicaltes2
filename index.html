@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Board</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    
+        
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 >Smart Task Board</h4>
+            <div class="nav">
+                <input type="text" name="name" placeholder="enter a tatsk" width="50"  required>
+            <select name="" id="">
+                <option value="low">low</option>
+                <option value="high">high</option>
+                <option value="medium">medium</option>
+                
+            </select>
+            <button class="btn btn-primary btn-md" >
+                <a href="addtask.html">Add Task</a>
+            </button>
+            </div>
+            <div class="row">
+                <h4>Task summary</h4><br><br>
+                <p>Total task: 0</p><br>
+                <p>completed: 0</p><br><br>
+                <p>remaining Task:0</p>
+            </div>
+            <script>
+                function validate(){
+                    if(name=!null){
+                        console.log("exist");
+                    }else{
+                        console.log("task description can not be empty");
+                    }
+                }
+            </script>
+
+
+        </div>
+    </div>
+    <script src="js/js/bootstrap.min.js"></script>
+</body>
+</html>
